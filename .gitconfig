@@ -1,6 +1,6 @@
 [user]
-  name = Sam Soffes
-  email = sam@soff.es
+  name = Maxwell Barvian
+  email = max@barvian.me
 [alias]
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
   up = pull --rebase
