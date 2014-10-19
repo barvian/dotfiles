@@ -14,7 +14,6 @@ FORMULAS=(
     imagemagick
     libxml2
     libxslt
-    libiconv
 )
 brew install ${FORMULAS[@]}
 
