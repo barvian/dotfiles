@@ -1,4 +1,4 @@
-# ~soffes
+# ~maxwell
 
 Based on [Ryan Bates](http://github.com/ryanb/dotfiles), [Ryan Tomayko](http://github.com/rtomayko/dotfiles), and [Oh My ZSH](https://github.com/robbyrussell/oh-my-zsh).
 
@@ -6,7 +6,7 @@ Based on [Ryan Bates](http://github.com/ryanb/dotfiles), [Ryan Tomayko](http://g
 
     $ cd ~
     $ git init
-    $ git remote add origin https://github.com/soffes/dotfiles.git
+    $ git remote add origin https://github.com/mbarvian/dotfiles.git
     $ git pull origin master
     $ ~/Scripts/install.sh
 
