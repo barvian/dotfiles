@@ -1,9 +1,10 @@
 echo "Changing shell…"
 sudo echo "/usr/local/bin/zsh" >> /etc/shells && chsh -s /usr/local/bin/zsh
 
-echo "Cloning Sublime Text configuration…"
-rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3
-git clone https://github.com/soffes/sublime.git ~/Library/Application\ Support/Sublime\ Text\ 3
+echo "Linking Sublime Text configuration to Dropbox"
+cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
+rm -r User
+ln -s ~/Dropbox/Development/Sublime\ Text/User
 
 echo "Hiding files…"
 SetFile -a "V" ~/Readme.markdown ~/LICENSE ~/Scripts
