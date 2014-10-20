@@ -22,7 +22,7 @@ rbenv global 2.1.3
 
 echo "Installing Node…"
 git clone https://github.com/creationix/nvm.git ~/.nvm && cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`
-nvm install stable
-nvm alias default stable
+nvm install 0.10.32
+nvm alias default 0.10.32
 
 echo "Done."
