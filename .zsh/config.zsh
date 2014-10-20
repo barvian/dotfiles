@@ -4,7 +4,6 @@ export EDITOR='nano'
 # Paths
 export PATH="./bin:$HOME/bin:$HOME/.rbenv/plugins/ruby-build/bin:/usr/local/heroku/bin:/usr/local/foreman/bin:/usr/local/bin:$HOME/Code/go/bin:/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
-export GOPATH=$HOME/Code/go
 
 # Colors
 export CLICOLOR=1
@@ -15,6 +14,9 @@ setopt PROMPT_SUBST
 # RENV
 autoload -U ~/.rbenv/shims
 export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
+
+# Node
+source ~/.nvm/nvm.sh
 
 # Timer
 REPORTTIME=10 # print elapsed time when more than 10 seconds
