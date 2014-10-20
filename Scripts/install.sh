@@ -20,4 +20,8 @@ echo "Installing Ruby…"
 rbenv install 2.1.3
 rbenv global 2.1.3
 
+echo "Installing Node…"
+git clone https://github.com/creationix/nvm.git ~/.nvm && cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`
+
+
 echo "Done."
