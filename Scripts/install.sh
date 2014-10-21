@@ -24,5 +24,6 @@ echo "Installing Node…"
 git clone https://github.com/creationix/nvm.git ~/.nvm && cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`
 nvm install 0.10.32
 nvm alias default 0.10.32
+npm install -g npm
 
 echo "Done."
