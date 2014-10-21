@@ -1,5 +1,5 @@
 echo "Changing shell…"
-sudo echo "/usr/local/bin/zsh" >> /etc/shells && chsh -s /usr/local/bin/zsh
+chsh -s /bin/zsh
 
 echo "Linking Sublime Text configuration to Dropbox"
 cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
