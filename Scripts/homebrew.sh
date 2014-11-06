@@ -14,6 +14,7 @@ FORMULAS=(
     imagemagick
     libxml2
     libxslt
+    heroku
 )
 brew install ${FORMULAS[@]}
 
