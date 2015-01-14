@@ -6,6 +6,10 @@ cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
 rm -r User
 ln -s ~/Dropbox/Development/Sublime\ Text/User
 
+echo "Installing pathogen.vim"
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
 echo "Hiding files…"
 SetFile -a "V" ~/Readme.markdown ~/LICENSE ~/Scripts
 
