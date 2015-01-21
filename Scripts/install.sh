@@ -10,6 +10,9 @@ echo "Installing pathogen.vim"
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
+echo "Installing vim plugins"
+git clone git://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/solarized
+
 echo "Hiding files…"
 SetFile -a "V" ~/Readme.markdown ~/LICENSE ~/Scripts
 
