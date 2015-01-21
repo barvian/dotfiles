@@ -15,6 +15,7 @@ FORMULAS=(
     libxml2
     libxslt
     heroku
+    vim
 )
 brew install ${FORMULAS[@]}
 

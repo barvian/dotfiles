@@ -4,13 +4,17 @@ execute pathogen#infect()
 
 " Don't auto-indent when pasting from external applications
 set paste
+" Use unnamed register with clipboard
+set clipboard=unnamed
+
 
 " Visual decorations
 
 " Color scheme
 set t_Co=256
 set background=dark
-colorscheme solarized
+colorscheme base16-ocean
+
 " Show file title in terminal tab
 set title
 " Show line numbers
@@ -27,6 +31,7 @@ set nohlsearch
 set ignorecase
 " ...except if we input a capital letter
 set smartcase
+
 
 " Keyboard shortcuts
 
