@@ -16,6 +16,7 @@ FORMULAS=(
     libxslt
     heroku
     vim
+    the_silver_searcher
 )
 brew install ${FORMULAS[@]}
 
