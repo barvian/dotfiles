@@ -51,7 +51,7 @@ set smartcase
 " Map ; to :
 nmap ; :
 " Map leader to , instead of \
-let mapleader = ","
+let mapleader = " "
 
 " Quicker window movement
 nnoremap <C-j> <C-w>j
