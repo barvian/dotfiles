@@ -51,18 +51,13 @@ set smartcase
 " Map ; to :
 nmap ; :
 " Map leader to , instead of \
-let mapleader = ","
+let mapleader = " "
 
 " Quicker window movement
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
-
-nnoremap <C-J> <C-w>J
-nnoremap <C-K> <C-w>K
-nnoremap <C-H> <C-w>H
-nnoremap <C-L> <C-w>L
 
 " Tab mappings
 nnoremap <leader>tt :tabnew<cr>
