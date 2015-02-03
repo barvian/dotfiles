@@ -59,6 +59,11 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
+nnoremap <C-J> <C-w>J
+nnoremap <C-K> <C-w>K
+nnoremap <C-H> <C-w>H
+nnoremap <C-L> <C-w>L
+
 " Tab mappings
 nnoremap <leader>tt :tabnew<cr>
 nnoremap <leader>te :tabedit
