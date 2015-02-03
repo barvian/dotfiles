@@ -2,6 +2,12 @@ execute pathogen#infect()
 
 " Interactions
 
+" Softtabs, 2 spaces
+set tabstop=2
+set shiftwidth=2
+set shiftround
+set expandtab
+
 " Don't auto-indent when pasting from external applications
 set paste
 " Use unnamed register with clipboard
