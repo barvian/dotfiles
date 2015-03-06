@@ -13,6 +13,7 @@ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 echo "Installing vim plugins"
 git clone git://github.com/tpope/vim-sensible.git ~/.vim/bundle/sensible
 git clone git://github.com/kien/ctrlp.vim.git ~/.vim/bundle/ctrlp
+git clone git://github.com/editorconfig/editorconfig-vim ~/.vim/bundle/editorconfig
 
 echo "Hiding files…"
 SetFile -a "V" ~/Readme.markdown ~/LICENSE ~/Scripts
