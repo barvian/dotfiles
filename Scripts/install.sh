@@ -14,6 +14,7 @@ echo "Installing vim plugins"
 git clone git://github.com/tpope/vim-sensible.git ~/.vim/bundle/sensible
 git clone git://github.com/kien/ctrlp.vim.git ~/.vim/bundle/ctrlp
 git clone git://github.com/editorconfig/editorconfig-vim ~/.vim/bundle/editorconfig
+git clone git://github.com/tpope/vim-surround.git ~/.vim/bundle/surround
 
 echo "Hiding files…"
 SetFile -a "V" ~/Readme.markdown ~/LICENSE ~/Scripts
