@@ -5,6 +5,7 @@
 *.swp
 *.tmproj
 tmtags
+_site/
 .sass-cache
 .bundle
 *xcuserdata/
