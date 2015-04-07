@@ -44,6 +44,8 @@ if exists("+colorcolumn")
 endif
 " Highlight current line
 set cursorline
+" Keep cursor centered vertically
+set scrolloff=9999
 " Don’t keep results highlighted after searching
 set nohlsearch
 " Ignore case when searching...
