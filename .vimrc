@@ -9,7 +9,7 @@ set shiftround
 set expandtab
 
 " Don't auto-indent when pasting from external applications
-" set paste
+set paste
 " Use unnamed register with clipboard
 set clipboard=unnamed
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
@@ -67,9 +67,6 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
-
-" jk to throw you into normal mode from insert mode
-inoremap jk <esc>
 
 " Tab mappings
 nnoremap <leader>tt :tabnew<cr>
