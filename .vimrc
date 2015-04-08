@@ -9,7 +9,7 @@ set shiftround
 set expandtab
 
 " Don't auto-indent when pasting from external applications
-set paste
+" set paste
 " Use unnamed register with clipboard
 set clipboard=unnamed
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
@@ -23,6 +23,7 @@ if executable('ag')
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
 endif
+
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
 set splitright
@@ -66,6 +67,9 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
+
+" jk to throw you into normal mode from insert mode
+inoremap jk <esc>
 
 " Tab mappings
 nnoremap <leader>tt :tabnew<cr>
