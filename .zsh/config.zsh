@@ -2,7 +2,6 @@
 export EDITOR='nano'
 
 # Paths
-export PATH="./bin:$HOME/bin:$HOME/.rbenv/plugins/ruby-build/bin:/usr/local/heroku/bin:/usr/local/foreman/bin:/usr/local/bin:$HOME/Code/go/bin:/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 
 # Colors
@@ -11,9 +10,9 @@ autoload colors; colors;
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
 setopt PROMPT_SUBST
 
-# RENV
-autoload -U ~/.rbenv/shims
-export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
+# RBENV
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 # Node
 source ~/.nvm/nvm.sh
