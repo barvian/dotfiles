@@ -4,6 +4,7 @@ brew upgrade
 TAPS=(
     homebrew/dupes
     homebrew/versions
+    homebrew/services
 )
 brew tap ${TAPS[@]}
 
@@ -17,6 +18,12 @@ FORMULAS=(
     heroku
     vim
     the_silver_searcher
+    mysql
+    'homebrew/apache/httpd22 --with-brewed-openssl --with-mpm-event'
+    'homebrew/apache/mod_fastcgi --with-brewed-httpd22'
+    'homebrew/php/php56'
+    php56-opcache
+    dnsmasq
 )
 brew install ${FORMULAS[@]}
 

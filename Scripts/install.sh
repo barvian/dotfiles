@@ -36,4 +36,7 @@ nvm install 0.12.4
 nvm alias default 0.12.4
 npm install -g npm
 
+echo "Configuring Apache, MySQL, and PHP"
+./Scripts/amp.sh
+
 echo "Done."
