@@ -1,7 +1,7 @@
 echo "Changing shell…"
 chsh -s /bin/zsh
 
-echo "Linking Sublime Text configuration to Dropbox"
+echo "Linking Atom configuration to Dropbox"
 rm -r ~/.atom
 ln -s ~/Dropbox/Apps/Atom ~/.atom
 
@@ -32,8 +32,8 @@ rbenv global 2.1.3
 
 echo "Installing Node…"
 git clone https://github.com/creationix/nvm.git ~/.nvm && cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`
-nvm install 0.12.4
-nvm alias default 0.12.4
+nvm install 4.1.1
+nvm alias default 4.1.1
 npm install -g npm
 
 echo "Configuring Apache, MySQL, and PHP"
