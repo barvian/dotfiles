@@ -20,7 +20,7 @@ FORMULAS=(
     the_silver_searcher
     mysql
     'homebrew/apache/httpd22 --with-brewed-openssl --with-mpm-event'
-    'homebrew/apache/mod_fastcgi --with-brewed-httpd22'
+    'homebrew/apache/mod_fastcgi --with-homebrew-httpd22'
     'homebrew/php/php56'
     php56-opcache
     dnsmasq
