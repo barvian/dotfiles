@@ -30,13 +30,13 @@ echo "Installing Ruby…"
 rbenv install 2.1.3
 rbenv global 2.1.3
 
+echo "Configuring Apache, MySQL, and PHP"
+./Scripts/amp.sh
+
 echo "Installing Node…"
 git clone https://github.com/creationix/nvm.git ~/.nvm && cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`
 nvm install 4.1.1
 nvm alias default 4.1.1
 npm install -g npm
-
-echo "Configuring Apache, MySQL, and PHP"
-./Scripts/amp.sh
 
 echo "Done."
