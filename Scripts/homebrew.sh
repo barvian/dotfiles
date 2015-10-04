@@ -3,7 +3,6 @@ brew upgrade
 
 TAPS=(
     homebrew/dupes
-    homebrew/versions
     homebrew/services
 )
 brew tap ${TAPS[@]}
