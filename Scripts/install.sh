@@ -33,6 +33,9 @@ rbenv global 2.1.3
 echo "Configuring Apache, MySQL, and PHP"
 ./Scripts/amp.sh
 
+echo "Installing Composer…"
+curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+
 echo "Installing Node…"
 git clone https://github.com/creationix/nvm.git ~/.nvm && cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`
 nvm install 4.1.1
