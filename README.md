@@ -6,7 +6,7 @@ Based on [Ryan Bates](http://github.com/ryanb/dotfiles), [Ryan Tomayko](http://g
 
     $ cd ~
     $ git init
-    $ git remote add origin https://github.com/mbarvian/dotfiles.git
+    $ git remote add origin https://github.com/barvian/dotfiles.git
     $ git pull origin master
     $ ~/Scripts/install.sh
 
