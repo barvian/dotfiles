@@ -20,8 +20,8 @@ FORMULAS=(
     mysql
     'homebrew/apache/httpd22 --with-brewed-openssl --with-mpm-event'
     'homebrew/apache/mod_fastcgi --with-homebrew-httpd22'
-    'homebrew/php/php56'
-    php56-opcache
+    'homebrew/php/php70'
+    php70-opcache
     dnsmasq
 )
 brew install ${FORMULAS[@]}
