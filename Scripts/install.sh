@@ -38,8 +38,8 @@ curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/loca
 
 echo "Installing Node…"
 git clone https://github.com/creationix/nvm.git ~/.nvm && cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`
-nvm install 4.1.1
-nvm alias default 4.1.1
+nvm install 5.5.0
+nvm alias default 5.5.0
 npm install -g npm
 
 echo "Done."
