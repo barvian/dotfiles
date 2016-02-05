@@ -27,8 +27,8 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 ./Scripts/homebrew.sh
 
 echo "Installing Ruby…"
-rbenv install 2.1.3
-rbenv global 2.1.3
+rbenv install 2.2.3
+rbenv global 2.2.3
 
 echo "Configuring Apache, MySQL, and PHP"
 ./Scripts/amp.sh
