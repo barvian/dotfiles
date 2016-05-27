@@ -1,5 +1,6 @@
-# Configure MySQL
+#!/bin/sh
 
+echo "Configuring MySQL"
 cp -v $(brew --prefix mysql)/support-files/my-default.cnf $(brew --prefix)/etc/my.cnf
 cat >> $(brew --prefix)/etc/my.cnf <<'EOF'
 
@@ -12,8 +13,7 @@ sed -i '' 's/^#[[:space:]]*\(innodb_buffer_pool_size\)/\1/' $(brew --prefix)/etc
 brew services start mysql
 $(brew --prefix mysql)/bin/mysql_secure_installation
 
-# Configure Apache
-
+echo "Configuring Apache"
 sudo launchctl unload /System/Library/LaunchDaemons/org.apache.httpd.plist 2>/dev/null
 sed -i '' '/fastcgi_module/d' $(brew --prefix)/etc/apache2/2.2/httpd.conf
 (export USERHOME=$(dscl . -read /Users/`whoami` NFSHomeDirectory | awk -F"\: " '{print $2}') ; export MODFASTCGIPREFIX=$(brew --prefix mod_fastcgi) ; cat >> $(brew --prefix)/etc/apache2/2.2/httpd.conf <<EOF
@@ -189,16 +189,14 @@ ${TAB}<string>root</string>
 EOF'
 sudo launchctl load -Fw /Library/LaunchDaemons/co.echo.httpdfwd.plist
 
-# Configure PHP
-
+echo "Configuring PHP"
 (export USERHOME=$(dscl . -read /Users/`whoami` NFSHomeDirectory | awk -F"\: " '{print $2}') ; sed -i '-default' -e 's|^;\(date\.timezone[[:space:]]*=\).*|\1 \"'$(sudo systemsetup -gettimezone|awk -F"\: " '{print $2}')'\"|; s|^\(memory_limit[[:space:]]*=\).*|\1 512M|; s|^\(post_max_size[[:space:]]*=\).*|\1 200M|; s|^\(upload_max_filesize[[:space:]]*=\).*|\1 100M|; s|^\(default_socket_timeout[[:space:]]*=\).*|\1 600|; s|^\(max_execution_time[[:space:]]*=\).*|\1 300|; s|^\(max_input_time[[:space:]]*=\).*|\1 600|; $a\'$'\n''\'$'\n''; PHP Error log\'$'\n''error_log = '$USERHOME'/Sites/logs/php-error_log'$'\n' $(brew --prefix)/etc/php/7.0/php.ini)
 chmod -R ug+w $(brew --prefix php70)/lib/php
 /usr/bin/sed -i '' "s|^\(\;\)\{0,1\}[[:space:]]*\(opcache\.enable[[:space:]]*=[[:space:]]*\)0|\21|; s|^;\(opcache\.memory_consumption[[:space:]]*=[[:space:]]*\)[0-9]*|\1256|;" $(brew --prefix)/etc/php/7.0/php.ini
 
 brew services start php70
 
-# Configure DNSMasq
-
+echo "Configuring DNSMasq"
 echo 'address=/.dev/127.0.0.1' > $(brew --prefix)/etc/dnsmasq.conf
 echo 'listen-address=127.0.0.1' >> $(brew --prefix)/etc/dnsmasq.conf
 echo 'port=35353' >> $(brew --prefix)/etc/dnsmasq.conf
