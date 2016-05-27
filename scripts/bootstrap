@@ -39,6 +39,6 @@ nvm alias default node
 npm install -g npm
 
 echo "Change Terminal Theme…"
-open ./theme/developer.terminal
+open ./theme/base16.terminal
 
 echo "Done."
