@@ -13,7 +13,6 @@ brew tap ${TAPS[@]}
 FORMULAS=(
     rbenv
     ruby-build
-    rbenv-gem-rehash
     git
     imagemagick
     libxml2
