@@ -1,13 +1,13 @@
 #!/bin/sh
 
-echo "Configuring zsh shell"
+echo "Configuring zsh shell…"
 chsh -s /bin/zsh
 
-echo "Linking Atom configuration to Dropbox"
+echo "Linking Atom configuration to Dropbox…"
 rm -r ~/.atom
 ln -s ~/Dropbox/Apps/Atom ~/.atom
 
-echo "Installing pathogen.vim"
+echo "Installing pathogen.vim…"
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
@@ -26,7 +26,7 @@ rbenv install 2.3.0
 rbenv global 2.3.0
 gem install bundler
 
-echo "Configuring Apache, MySQL, and PHP"
+echo "Configuring Apache, MySQL, and PHP…"
 ./scripts/amp
 
 echo "Installing Composer…"
@@ -37,5 +37,8 @@ git clone https://github.com/creationix/nvm.git ~/.nvm && cd ~/.nvm && git check
 nvm install node
 nvm alias default node
 npm install -g npm
+
+echo "Change Terminal Theme…"
+open ./theme/developer.terminal
 
 echo "Done."
