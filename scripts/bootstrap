@@ -12,7 +12,7 @@ mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 echo "Hiding files…"
-SetFile -a "V" ~/Readme.markdown ~/LICENSE ~/scripts
+SetFile -a "V" ~/README.md ~/LICENSE ~/scripts
 
 echo "Excluding everything from git…"
 echo '*' >> ~/.git/info/exclude
