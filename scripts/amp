@@ -16,8 +16,9 @@ brew services start mysql
 $(brew --prefix mysql)/bin/mysql_secure_installation
 
 echo "Configuring Apache"
-brew install 'homebrew/apache/httpd22 --with-brewed-openssl --with-mpm-event'
-brew install 'homebrew/apache/mod_fastcgi --with-homebrew-httpd22'
+brew tap homebrew/apache
+brew install httpd22 --with-brewed-openssl --with-mpm-event
+brew install mod_fastcgi --with-homebrew-httpd22
 
 sudo launchctl unload /System/Library/LaunchDaemons/org.apache.httpd.plist 2>/dev/null
 sed -i '' '/fastcgi_module/d' $(brew --prefix)/etc/apache2/2.2/httpd.conf
