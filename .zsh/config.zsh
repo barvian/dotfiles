@@ -1,5 +1,5 @@
 # Editor
-export EDITOR='nano'
+export EDITOR='vim'
 
 # Paths
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
