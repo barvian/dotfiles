@@ -1,26 +1,22 @@
-# Set Apple Terminal.app resume directory
-if [[ $TERM_PROGRAM == "Apple_Terminal" ]] && [[ -z "$INSIDE_EMACS" ]] {
-  function chpwd {
-    local SEARCH=' '
-    local REPLACE='%20'
-    local PWD_URL="file://$HOSTNAME${PWD//$SEARCH/$REPLACE}"
-    printf '\e]7;%s\a' "$PWD_URL"
-  }
+source ~/.antigen/antigen.zsh
 
-  chpwd
-}
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
 
-# Load functions and completion
-fpath=(~/.zsh/functions $fpath)
-autoload -U compinit
-compinit
-autoload -U ~/.zsh/functions/*(:t)
+# Bundles from the default repo (robbyrussell's oh-my-zsh).
+antigen bundle git
+antigen bundle pip
+antigen bundle lein
+antigen bundle command-not-found
 
-# Matches case insensitive for lowercase
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+# Syntax highlighting bundle.
+antigen bundle zsh-users/zsh-syntax-highlighting
 
-# Pasting with tabs doesn't perform completion
-zstyle ':completion:*' insert-tab pending
+# Theme
+antigen theme agnoster
 
-# Load files
-for file (~/.zsh/*.zsh) source $file
+# Custom bundle
+antigen bundle ~/.zsh
+
+# Done
+antigen apply

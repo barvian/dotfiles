@@ -33,7 +33,6 @@ set splitright
 " Color scheme
 set t_Co=256
 set background=dark
-colorscheme base16-ocean
 
 " Show file title in terminal tab
 set title
