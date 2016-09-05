@@ -1,5 +1,11 @@
 source ~/.antigen/antigen.zsh
 
+# Load functions and completion
+fpath=(~/.zsh/functions $fpath)
+autoload -U compinit
+compinit
+autoload -U ~/.zsh/functions/*(:t)
+
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
 
