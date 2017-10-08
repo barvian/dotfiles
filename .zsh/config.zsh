@@ -10,13 +10,6 @@ autoload colors; colors;
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
 setopt PROMPT_SUBST
 
-# RBENV
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
-# Node
-source ~/.nvm/nvm.sh
-
 # Timer
 REPORTTIME=10 # print elapsed time when more than 10 seconds
 
@@ -39,4 +32,4 @@ setopt COMPLETE_IN_WORD
 setopt IGNORE_EOF
 
 # Default user
-DEFAULT_USER=maxwell
+DEFAULT_USER=max
