@@ -11,13 +11,10 @@ TAPS=(
 brew tap ${TAPS[@]}
 
 FORMULAS=(
-    rbenv
-    ruby-build
     git
     imagemagick
     libxml2
     libxslt
-    vim
 )
 brew install ${FORMULAS[@]}
 
