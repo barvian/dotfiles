@@ -20,10 +20,4 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 echo "Configuring Apache, MySQL, and PHP…"
 ./scripts/amp
 
-echo "Installing Node…"
-git clone https://github.com/creationix/nvm.git ~/.nvm && cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`
-nvm install node
-nvm alias default node
-npm install -g npm
-
 echo "Done."
