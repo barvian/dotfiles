@@ -17,16 +17,8 @@ echo "Installing Homebrew…"
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ./scripts/homebrew
 
-echo "Installing Ruby…"
-rbenv install 2.3.0
-rbenv global 2.3.0
-gem install bundler
-
 echo "Configuring Apache, MySQL, and PHP…"
 ./scripts/amp
-
-echo "Installing Composer…"
-curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
 echo "Installing Node…"
 git clone https://github.com/creationix/nvm.git ~/.nvm && cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`
