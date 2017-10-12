@@ -1,5 +1,3 @@
-execute pathogen#infect()
-
 " Interactions
 
 " Softtabs, 2 spaces
