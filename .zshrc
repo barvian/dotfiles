@@ -1,4 +1,4 @@
-source ~/.antigen/antigen.zsh
+source $(brew --prefix)/share/antigen/antigen.zsh
 
 # Load functions and completion
 fpath=(~/.zsh/functions $fpath)
