@@ -20,6 +20,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Theme
 antigen theme agnoster
+DEFAULT_USER=`whoami`
 
 # Custom bundle
 antigen bundle ~/.zsh
