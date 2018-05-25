@@ -12,6 +12,7 @@ brew tap ${TAPS[@]}
 
 FORMULAS=(
     git
+    ruby
     node
     imagemagick
     libxml2
