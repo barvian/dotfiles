@@ -15,9 +15,6 @@ FORMULAS=(
     ruby
     node
     antigen
-    imagemagick
-    libxml2
-    libxslt
 )
 brew install ${FORMULAS[@]}
 
