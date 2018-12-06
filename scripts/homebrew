@@ -15,6 +15,7 @@ FORMULAS=(
     ruby
     node
     antigen
+    yarn
 )
 brew install ${FORMULAS[@]}
 
